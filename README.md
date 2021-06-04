@@ -11,10 +11,10 @@ The project consists of the following Java classes for the ETL pipeline:
 3. com.streaming.aggregate - Class for converting TableRows to Key/Value pairs that can be grouped by a key and aggregated
 4. com.streaming.join - Class for joining the aggregated Pub/Sub messages with TableRows from the dimensional table 
 
-The project also consites of the following scripts:
+The project also consists of the following scripts:
 
 1. pom.xml - Configuration file for Apache Maven
-2. message_subscriber - Directory with the com.subscriber.Subscriber Java Class and pom.xml file for Google Cloud Functions to receive and publish the injested messages containing the flight data
+2. message_subscriber - Directory with the com.subscriber.Subscriber Java Class and pom.xml file to set up a Google Cloud Function to receive messages from a streaming service and publish them to Pub/Sub
 
 ## Executing Apache Beam ETL Pipelines on Google Dataflow using the Cloud SDK
 
