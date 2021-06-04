@@ -20,21 +20,18 @@ The project also consists of the following scripts:
 
 From the same directory as the Apache Beam project execute:
 
+```shell
+mvn compile exec:java \
+-Dexec.mainClass=com.streaming.ETL \
+-Dexec.cleanupDaemonThreads=false \
+-Dexec.args=" \
+--project=${PROJECT} \
+--region=${REGION} \
+--inputTopic=${TOPIC} \
+--runner=DataflowRunner \
+--windowSize=${WINDOW}"
 
-     ```shell
-    mvn compile exec:java \
-    -Dexec.mainClass=com.streaming.ETL \
-    -Dexec.cleanupDaemonThreads=false \
-    -Dexec.args=" \
-        --project=${PROJECT} \
-        --region=${REGION} \
-        --inputTopic=${TOPIC} \
-        --runner=DataflowRunner \
-        --windowSize=${WINDOW}"
-     
-     ```
-
-
+```
 
 ## References
 
