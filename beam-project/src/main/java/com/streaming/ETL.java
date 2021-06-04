@@ -34,7 +34,7 @@ import org.apache.beam.sdk.io.gcp.bigquery.BigQueryIO.Write.WriteDisposition;
 import org.apache.beam.sdk.transforms.ParDo;
 import org.apache.beam.sdk.transforms.DoFn;
 
-public class PubSubToBigQuery {
+public class ETL {
   // configuration options for Dataflow runner
   public interface BeamOptions extends PipelineOptions, StreamingOptions {
     @Description("The Cloud Pub/Sub topic to read from")
