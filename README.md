@@ -20,7 +20,8 @@ The project also consists of the following scripts:
 
 From the same directory as the Apache Beam project execute:
 
-    ```shell
+
+     ```shell
     mvn compile exec:java \
     -Dexec.mainClass=com.streaming.ETL \
     -Dexec.cleanupDaemonThreads=false \
@@ -30,7 +31,10 @@ From the same directory as the Apache Beam project execute:
         --inputTopic=${TOPIC} \
         --runner=DataflowRunner \
         --windowSize=${WINDOW}"
-    ```
+     
+     ```
+
+
 
 ## References
 
