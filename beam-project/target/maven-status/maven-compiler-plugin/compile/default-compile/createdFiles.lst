@@ -1,6 +1,6 @@
+com/streaming/PubSubToBigQuery$BeamOptions.class
 com/streaming/messageParsing$JsonToTableRow$1.class
 com/streaming/aggregate.class
-com/streaming/PubSubToBigQuery$beamOptions.class
 com/streaming/messageParsing.class
 com/streaming/aggregate$tableRowMax.class
 com/streaming/messageParsing$JsonToTableRow.class
