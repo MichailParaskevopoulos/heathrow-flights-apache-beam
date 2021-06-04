@@ -1,7 +1,7 @@
 # Heathrow Flights Streaming and ETL
 This is a sample code for Apache Beam to perform ETL from a stream-processing service (Pub/Sub) to BigQuery using Dataflow as the runner. 
 
-### Overview
+## Overview
 An implementation of Apache Beam to stream the active flights either going to or leaving London Heathrow airport using Pub/Sub, process the data by joining with a dimensional table, and load them to a BigQuery table. 
 
 The project consists of the following Java classes:
@@ -16,7 +16,7 @@ The project also consites of the following scripts:
 1. pom.xml - Configuration file for Apache Maven
 2. message_publisher - Directory with Java Class and pom.xml file for Google Cloud Functions to receive and publish the injested messages containing the flight data
 
-### Executing Apache Beam ETL Pipelines on Google Dataflow using the Cloud SDK
+## Executing Apache Beam ETL Pipelines on Google Dataflow using the Cloud SDK
 
 From the same directory as the Apache Beam project execute:
 
