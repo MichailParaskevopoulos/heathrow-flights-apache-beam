@@ -61,7 +61,7 @@ public class ETL {
     PCollection<TableRow> dimensionalRows = null;
     dimensionalRows = pipeline.apply("Read Dimensional Table from BigQuery",
                                 BigQueryIO.readTableRows()
-                                .from(String.format("%s:%s.%s", "covid19flights", "covid19_airtraffic", "aircraft_typesV2")));
+                                .from(String.format("%s:%s.%s", <Input Project>, <Input Dataset>, <Input Table>)));
 
     PCollection<String> messages = null;
     messages = pipeline.apply("Pull PubSub Messages", PubsubIO.readStrings().fromTopic(options.getInputTopic()))
@@ -85,7 +85,7 @@ public class ETL {
     finalTableRows.apply(
             "Write Processed Results to BigQuery",
             BigQueryIO.writeTableRows()
-                .to(String.format("%s:%s.%s", "covid19flights", "covid19_airtraffic", "flight_streamV3"))
+                .to(String.format("%s:%s.%s", <Output Project>, <Output Dataset>, <Output Table>))
                 .withCreateDisposition(CreateDisposition.CREATE_NEVER)
                 .withWriteDisposition(WriteDisposition.WRITE_APPEND));
         

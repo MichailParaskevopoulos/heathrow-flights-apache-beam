@@ -26,9 +26,9 @@ public class Subscriber implements HttpFunction {
     public void service(HttpRequest request, HttpResponse response) throws IOException {
         BufferedWriter responseWriter = response.getWriter();
 
-        String topicName = "projects/covid19flights/topics/dataStream";
-        String topicId = "dataStream";
-        String projectId = "covid19flights";
+        String topicName =  //
+        String topicId = //
+        String projectId = //
 
         JsonObject body = gson.fromJson(request.getReader(), JsonObject.class);
 

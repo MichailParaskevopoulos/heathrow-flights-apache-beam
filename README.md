@@ -25,11 +25,11 @@ mvn compile exec:java \
 -Dexec.mainClass=com.streaming.ETL \
 -Dexec.cleanupDaemonThreads=false \
 -Dexec.args=" \
---project=${PROJECT} \
---region=${REGION} \
---inputTopic=${TOPIC} \
---runner=DataflowRunner \
---windowSize=${WINDOW}"
+    --project=${PROJECT} \
+    --region=${REGION} \
+    --inputTopic=${TOPIC} \
+    --runner=DataflowRunner \
+    --windowSize=${WINDOW}"
 
 ```
 
@@ -37,5 +37,5 @@ mvn compile exec:java \
 
 This project relies on the following resources:
 
-1. streaming data source [Heathrow Flights](https://ably.com/hub/ably-flightradar24/heathrow-flights) from [Ably Hub](https://ably.com/hub)
+1. Streaming data source [Heathrow Flights](https://ably.com/hub/ably-flightradar24/heathrow-flights) from [Ably Hub](https://ably.com/hub)
 2. [OpenFlights](https://github.com/jpatokal/openflights) dataset for the dimensional tables with airline and aircraft data
